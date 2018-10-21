@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.com.changchinghsiang.sunday_classno_07_mediaplayerwithsdcard.MainActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/xml_padding_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/xml_layout_marginBottom_20">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="@dimen/xml_layout_width_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/xml_button_text_start"
+            android:layout_marginStart="@dimen/xml_layout_marginStart_20"
+            android:layout_marginEnd="@dimen/xml_layout_marginEnd_20"
+            android:onClick="StartOnClick"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="@dimen/xml_layout_width_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/xml_button_text_stop"
+            android:layout_marginStart="@dimen/xml_layout_marginStart_20"
+            android:layout_marginEnd="@dimen/xml_layout_marginEnd_20"
+            android:onClick="StopOnClick"/>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/xml_layout_marginBottom_20"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/xml_textView_text" />
+</LinearLayout>
